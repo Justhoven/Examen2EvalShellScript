@@ -1,8 +1,8 @@
 #!/bin/bash
 
-resto=$(($1%$2))
 
-for (( i=$resto; i>0; i++)) do
+
+while [ $2 -ne 0 ]; do
     resto=$(($1%$2))
     if [ $resto -eq 0 ]; then
         mcd=$2
